@@ -237,6 +237,6 @@ class Devdigest
   end
 
   def github_url(api_url)
-    api_url.sub("api.github.com/repos", "github.com").sub("/pulls/", "/pull/")
+    api_url.sub("api.github.com/repos", "github.com").sub("/pulls/", "/pull/").sub("/commits/", "/commit/")
   end
 end
