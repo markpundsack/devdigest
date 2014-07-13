@@ -44,7 +44,7 @@ class Devdigest
       end
     when "IssueCommentEvent"
       title  = event.payload.issue.title
-      url    = event.payload.issue.url
+      url    = event.payload.comment.url
       [title,"[commented](#{github_url(url)})"]
     end
   end
